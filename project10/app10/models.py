@@ -10,6 +10,8 @@ class Bank(models.Model):
     account_number=models.BigIntegerField(unique=True,blank=False)
     text_payer_id=models.CharField(max_length=255,blank=False)
 
+
+
 class Address_detail(models.Model):
     address=models.CharField(max_length=255,blank=False)
     area=models.CharField(max_length=255,blank=False)
